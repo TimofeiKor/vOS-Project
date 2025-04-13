@@ -1,0 +1,17 @@
+[12.04.2025]
+INITIAL UPDATE! vOS build 12:
+    changes:
+        - created a console and "help command"
+        - created a menu list
+    bugs:
+        - info command not show info about vOS
+
+
+[12.04.2025]
+Opening update! vOS build 17:
+    changes:
+        - fixed bug with info command
+        - added calc program:
+            - for now only plus command
+    bugs:
+        - calc app not opening
