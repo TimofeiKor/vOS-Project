@@ -1,4 +1,10 @@
+import os
+
+def clear():
+    os.system('cls')
+
 def question():
+    clear()
     char = input("input char: ")
     if char == '+':
         plus()

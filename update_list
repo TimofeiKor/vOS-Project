@@ -15,3 +15,10 @@ Opening update! vOS build 17:
             - for now only plus command
     bugs:
         - calc app not opening
+
+[14.04.2025]
+Fixed update! vOS Build 27:
+    changes:
+        - fixed bugs
+        - name and build of vOS is on menu
+        - detail info
