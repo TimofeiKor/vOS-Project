@@ -1,4 +1,3 @@
-import calc
 import os
 import time
 from colorama import init, Fore
@@ -32,12 +31,11 @@ def boot():
 boot()
 
 commands = ["vos", "info"]
-apps = ["calc"]
+apps = ["calc", "time"]
 cmd = input("root/py/> ")
 
-
 def infoLong():
-    print("vOS build 34")
+    print("vOS build 40")
     print("Powered by Python")
     print("Author: @TimofeiKor(GitHub)")
 
@@ -55,15 +53,59 @@ def helpOpen():
     if cmd == commands[0]:
         helpMenu()
 
+def question():
+    clear()
+    char = input("input char: ")
+    if char == '+':
+        plus()
+    elif char == '-':
+        minus()
+    elif char == '*':
+        multiply()
+    elif char == '/':
+        divide()
+
+def plus():
+    x = int(input("input num1: "))
+    y = int(input("input num2: "))
+    res = x + y
+    print("result: ", res)
+    cmd = input("input 'exit' for closing app... ")
+
+def minus():
+    x = int(input("input num1: "))
+    y = int(input("input num2: "))
+    res = x - y
+    print("result: ", res)
+    cmd = input("input 'exit' for closing app... ")
+
+def divide():
+    x = int(input("input num1: "))
+    y = int(input("input num2: "))
+    res = x / y
+    print("result: ", res)
+    cmd = input("input 'exit' for closing app... ")
+
+def multiply():
+    x = int(input("input num1: "))
+    y = int(input("input num2: "))
+    res = x * y
+    print("result: ", res)
+    cmd = input("input 'exit' for closing app... ")
+
+
+
+def cTime():
+    c_time = time.ctime()
+    print("Current time: ", c_time)
+
 def helpMenu():
-        clear()
-        print(Fore.LIGHTMAGENTA_EX + "opening vos...")
-        time.sleep(3)
         clear()
         infoShort()
         print("==========MENU==========")
         print(commands[1])
         print(apps[0])
+        print(apps[1])
         print("========================")
         cmd = input("root/py/vos/> ")
 
@@ -71,8 +113,11 @@ def helpMenu():
             infoLong()
         cmd = input("root/py/vos/> ")
         if cmd == apps[0]:
-            calc.question()
+            question()
         helpMenu()
+        cmd = input("root/py/vos/> ")
+        if cmd == apps[1]:
+            cTime()
         cmd = input("root/py/vos/> ")
 
 
