@@ -28,3 +28,11 @@ Colored update! vOS build 34:
     changes:
         - added colors (!!!)
         - added boot
+
+[23.04.2025]
+De-timed update! vOS build 40:
+    changes:
+        - added time app
+        - fixed bugs
+    bugs:
+        - time app not working
