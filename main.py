@@ -35,12 +35,20 @@ apps = ["calc", "time"]
 cmd = input("root/py/> ")
 
 def infoLong():
+<<<<<<< HEAD
     print("vOS build 34")
+=======
+    print("vOS build 40")
+>>>>>>> b1d37b5a34e50659a51c89e377d482450609aa7e
     print("Powered by Python")
     print("Author: @TimofeiKor(GitHub)")
 
 def infoShort():
+<<<<<<< HEAD
     print(Fore.LIGHTBLUE_EX + "vOS build 34")
+=======
+    print(Fore.LIGHTBLUE_EX + "vOS build 19")
+>>>>>>> b1d37b5a34e50659a51c89e377d482450609aa7e
 
 def againcmd():
     global cmd
