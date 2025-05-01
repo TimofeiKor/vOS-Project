@@ -36,19 +36,3 @@ De-timed update! vOS build 40:
         - fixed bugs
     bugs:
         - time app not working
-
-[25.04.2025]
-Immidietely update:
-    why?
-<<<<<<< HEAD
-        - system's broking while i test it
-
-[01.05.2025]
-Fixed update no.2! vOS Build 40/2:
-    changes:
-        - fixed bugs - system is back to work
-    bugs:
-        - time app is not working
-=======
-        - system's broking while i test it
->>>>>>> 03fc35f617834103a3b10e21aea9ebed698164b9
